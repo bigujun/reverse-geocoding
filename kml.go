@@ -107,11 +107,11 @@ func makePlace(x *kmlPlacemark) placemark {
 	long, _ := strconv.ParseFloat(x.ExtendedData.get("LONG"), 64)
 
 	return placemark{
-		id:    id,
-		ptype: x.ExtendedData.get("TIPO"),
-		city:  x.ExtendedData.get("NM_MUNICIPIO"),
-		state: x.ExtendedData.get("NM_UF"),
-		lat:   lat,
-		long:  long,
+		ID:    id,
+		Ptype: x.ExtendedData.get("TIPO"),
+		City:  x.ExtendedData.get("NM_MUNICIPIO"),
+		State: x.ExtendedData.get("NM_UF"),
+		Lat:   lat,
+		Long:  long,
 	}
 }
